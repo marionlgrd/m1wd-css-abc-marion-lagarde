@@ -20,6 +20,8 @@
 
 }
 
+html{cursor:url("css/images/cercles.svg"), auto;}
+
 .box-filter{
   display: none;
 
@@ -50,22 +52,87 @@ h1{
   text-align: center;
   font-family: marvin,sans-serif ;
 
+
 }
 
- nav{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
+
+.menu-toggle{
+  margin-top: 1em;
+  margin-left: 1em;
+}
 
 
 
- }
+ .main-menu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left : -300px;
+  height: 10%;
+  transition: all 1s cubic-bezier(0, 0.55, 0.45, 1);
+  z-index: 999;
+
+}
+
+.main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-bottom: 0.5px solid transparent;
+        }
+
+.main-menu ul {
+  min-height: 100%;
+  width: 300px;
+  background: var(--color2);
+  margin: 0;
+  padding: 5em 0 0;
+}
+
+.main-menu a {
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  padding: .75em 15px;
+  line-height: 1em;
+  font-size: 1.5em;
+  color: var(--fontcolor);
+  text-decoration: none;
+  border-bottom: 0.5px solid lightsalmon;
+
+}
+
+.main-menu:target{
+  left: 0;
+}
+
+.main-menu:target .menu-close {
+  z-index: 1001;
+}
+
+.main-menu:target + .backdrop {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background: #FFF7EC;
+  cursor: default;
+}
+
 
  .goback{
 font-family: 'Montserrat', sans-serif;
 text-decoration: none;
 padding: 1rem;
  }
+
+.btn-holder{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
 
  .btn a{
    padding: var(--padding1);
@@ -173,7 +240,7 @@ opacity:0 }
   background-color:#E67E30;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
-
+  border:0px;
 }
 .basic-box:nth-child(4):hover svg{
 opacity: 1;
@@ -191,7 +258,8 @@ opacity:0 }
 .basic-box:nth-child(5):hover{
   background-color:#6faef2;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+border:0px;
 }
 .basic-box:nth-child(5):hover svg{
 opacity: 1;
@@ -209,7 +277,8 @@ opacity:0 }
 .basic-box:nth-child(6):hover{
   background-color:#c2022f;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+border:0px;
 }
 
 .basic-box:nth-child(6):hover svg{
@@ -228,7 +297,8 @@ opacity:0 }
 .basic-box:nth-child(7):hover{
   background-color:#1560BD;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+border:0px;
 }
 
 .basic-box:nth-child(7):hover svg{
@@ -247,7 +317,8 @@ opacity:0 }
 .basic-box:nth-child(8):hover{
   background-color:#1D7583;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+  border:0px;
 }
 
 .basic-box:nth-child(8):hover svg{
@@ -266,7 +337,8 @@ opacity:0 }
 .basic-box:nth-child(9):hover{
   background-color:#8c440d;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+border:0px;
 }
 .basic-box:nth-child(9):hover svg{
 opacity: 1;
@@ -278,100 +350,120 @@ animation: line-ani 7.5s forwards;
 .basic-box:nth-child(10):hover{
   background-color:#BBD2E1;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+border:0px;
 }
 .basic-box:nth-child(11):hover{
   background-color:#1b4f08;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+  border:0px;
 }
 .basic-box:nth-child(12):hover{
   background-color:#FF6F7D;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+border:0px;
 }
 .basic-box:nth-child(13):hover{
   background-color:#FFE436;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+border:0px;
 }
 .basic-box:nth-child(14):hover{
   background-color:#21177D;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+border:0px;
 }
 .basic-box:nth-child(15):hover{
   background-color:#b666d2;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+border:0px;
 }
 .basic-box:nth-child(16):hover{
   background-color:#DB0730;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+border:0px;
 }
 .basic-box:nth-child(17):hover{
   background-color:black;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+border:0px;
 }
 .basic-box:nth-child(18):hover{
   background-color:orange;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+border:0px;
 }
 .basic-box:nth-child(19):hover{
  background-color:#59578d;
  color:white;
- transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+ transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+ border:0px;
 }
 .basic-box:nth-child(20):hover{
   background-color:#91283B;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+  border:0px;
 }
 .basic-box:nth-child(21):hover{
   background-color:red;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+  border:0px;
 }
 .basic-box:nth-child(22):hover{
   background-color:#f4c430;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+  border:0px;
 }
 .basic-box:nth-child(23):hover{
   background-color:#d07c50;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+  border:0px;
 }
 .basic-box:nth-child(24):hover{
   background-color:#9a0eeb;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+  border:0px;
 }
 .basic-box:nth-child(25):hover{
   background-color:#82C46C;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+  border:0px;
 }
 .basic-box:nth-child(26):hover{
   background-color:#4f1607;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+  border:0px;
 }
 .basic-box:nth-child(27):hover{
   background-color:#c1e5e8;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+  border:0px;
 }
 .basic-box:nth-child(28):hover{
   background-color:#e5c78e;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+  border:0px;
 }
 .basic-box:nth-child(29):hover{
   background-color:#6c0277;
   color:white;
-  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1)
+  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
+  border:0px;
 }
