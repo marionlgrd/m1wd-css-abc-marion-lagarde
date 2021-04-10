@@ -154,18 +154,19 @@ span a:hover{
  .btn {color:var(--color2);
    background:transparent;
    border-width:2px;
+   border-radius: 5px;
    border-style: solid;
-   border-color: var(--color2);
+   border-color: var(--color3);
    position:relative;
    margin:3rem;
    display:inline-block;
    padding:0.5rem 1rem;
    transition:all 0.3s ease-in-out;
    text-align:center;}
-.btn:before, .btn:after {content:'';
+ .btn:before, .btn:after {content:'';
  display:block;
  position:absolute;
- border-color:var(--color4);
+ border-color:var(--color1);
  box-sizing:border-box;
  border-style:solid;
  width:1rem;
@@ -174,9 +175,11 @@ span a:hover{
  .btn:before {top:-6px;
    left:-6px;
    border-width:2px 0 0 2px;
+   border-radius: 10px;
    z-index:5;}
  .btn:after {bottom:-6px;
    right:-6px;
+   border-radius: 10px;
    border-width:0 2px 2px 0;}
  .btn:hover:before, .btn:hover:after {
    width:calc(100% + 12px);
@@ -185,7 +188,7 @@ span a:hover{
  .btn:hover {
    color:#fff;
    background-color:var(--color4);
-   border-color:var(--color4)}
+   border-color:var(--color1)}
  .panel {max-width:960px;
    text-align:center;
    position:relative;}
@@ -224,6 +227,7 @@ span a:hover{
 .basic-box{
   padding: 1rem;
   border:1px solid var(--fontcolor);
+  border-radius: 20px;
   margin:2rem;
   text-align: center;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
@@ -346,12 +350,22 @@ transition: svg 0.5s ease;
 animation: line-ani 7.5s forwards;
 
 }
+.basic-box:nth-child(10) svg{
+opacity: 0;
 
+
+}
 .basic-box:nth-child(10):hover{
   background-color:#BBD2E1;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
 border:0px;
+}
+.basic-box:nth-child(10):hover svg{
+opacity: 1;
+transition: svg 0.5s ease;
+animation: line-ani 7.5s forwards;
+
 }
 .basic-box:nth-child(11):hover{
   background-color:#1b4f08;
