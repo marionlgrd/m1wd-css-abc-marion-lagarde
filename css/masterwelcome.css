@@ -18,6 +18,10 @@ overflow: hidden;
   width:70px;
   top:25px;
   right:25px;
+  animation-name:turn;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
 }
 
 .logo svg{
@@ -56,20 +60,19 @@ z-index: 2;
   width: 50vw;
   z-index: 1;
   position:relative;
-
-}
-
-.circle {
-  background:black;
   animation-name:test;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
+
+
 }
 
+
 @keyframes test {
-  0%{transform: translateX(200px) scale(0.5);}
-  100%{transform: translateX(-200px) scale(3);}
+  0%{transform:  scale(0.75);}
+  50%{transform:  scale(1);}
+  100%{transform:  scale(0.75);}
 
 }
 @keyframes cercle {
@@ -84,12 +87,9 @@ z-index: 2;
 }
 
 
-#round-text{
-  animation-iteration-count: infinite;
-  animation-name:turn;
-  animation: all 1s ease;
-  animation-duration: 4s;
-}
+
+
+
 
 @keyframes turn {
   0%{

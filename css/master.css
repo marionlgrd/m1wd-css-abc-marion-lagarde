@@ -153,28 +153,29 @@ padding: 1rem;
 }
 
  .btn a{
+   position: relative;
+     z-index: 9999;
    padding: var(--padding1);
    font-family: marvin,sans-serif ;
    font-weight: 100;
    text-decoration: none;
    color: black;
  }
+ .btn a:hover{
 
-span a:hover{
-   font-weight: 1000;
-   text-decoration: none;
-   color:white;
+   color: var(--color3);
  }
 
 
 
 
- .btn {color:var(--color2);
+
+ .btn {color:black;
    background:transparent;
    border-width:2px;
    border-radius: 5px;
    border-style: solid;
-   border-color: var(--color3);
+   border-color: black;
    position:relative;
    margin:3rem;
    display:inline-block;
@@ -184,7 +185,7 @@ span a:hover{
  .btn:before, .btn:after {content:'';
  display:block;
  position:absolute;
- border-color:var(--color1);
+ border-color:black;
  box-sizing:border-box;
  border-style:solid;
  width:1rem;
@@ -202,10 +203,10 @@ span a:hover{
  .btn:hover:before, .btn:hover:after {
    width:calc(100% + 12px);
    height:calc(100% + 12px);
-   border-color:var(--color3)}
+   border-color:var(--color1)}
  .btn:hover {
-   color:#fff;
-   background-color:var(--color4);
+   color:var(--color1);
+   background-color:transparent;
    border-color:var(--color1)}
  .panel {max-width:960px;
    text-align:center;
