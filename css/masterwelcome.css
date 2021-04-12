@@ -12,9 +12,23 @@ body{
 overflow: hidden;
 }
 
+.logo{
+  position: absolute;
+  height:70px;
+  width:70px;
+  top:25px;
+  right:25px;
+}
+
+.logo svg{
+  color:black;
+
+}
+
 h1{
   font-family: marvin,sans-serif ;
   font-size: 5em;
+  text-shadow: 10px 5px #fff;
 }
 
 a{
@@ -45,19 +59,38 @@ z-index: 2;
 
 }
 
-#cercle1{
+.circle{
   animation-iteration-count: infinite;
   animation-name:cercle;
-  animation: all 2s ease;
+  animation: svg 2s ease;
   animation-duration: 4s;
 }
 @keyframes cercle {
   0%{
-  transform:scale(0.5,0.5,0.5,0.5);
+  transform:scale(0.5);
 
   }
   100%{
-  transform:scale(3,3,3,3);
+  transform:scale(3);
+
+  }
+}
+
+
+#round-text{
+  animation-iteration-count: infinite;
+  animation-name:turn;
+  animation: all 1s ease;
+  animation-duration: 4s;
+}
+
+@keyframes turn {
+  0%{
+  transform: rotate(deg0);
+
+  }
+  100%{
+  transform: rotate(deg100);
 
   }
 }
