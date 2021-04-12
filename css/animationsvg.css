@@ -8,9 +8,24 @@
 
 }
 
-.cls-1{
-  fill:#000;
-  stroke:#000;
+.cherry{
+  opacity: 1;
+    stroke:#FF073A;
+    stroke-linecap:round;
+    stroke-dasharray: 2797.898681640625;
+    stroke-dashoffset: 2797.898681640625;
+    animation: cherry 7s ease-in-out infinite;
+
+}
+
+@keyframes cherry {
+  from {
+    stroke-dashoffset: 2797.898681640625;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-width: 2;
+  }
 }
 
 
