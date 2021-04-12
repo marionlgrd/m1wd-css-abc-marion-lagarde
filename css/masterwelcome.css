@@ -59,11 +59,18 @@ z-index: 2;
 
 }
 
-.circle{
+.circle {
+  background:black;
+  animation-name:test;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
-  animation-name:cercle;
-  animation: svg 2s ease;
-  animation-duration: 4s;
+  animation-timing-function: ease;
+}
+
+@keyframes test {
+  0%{transform: translateX(200px) scale(0.5);}
+  100%{transform: translateX(-200px) scale(3);}
+
 }
 @keyframes cercle {
   0%{
@@ -97,13 +104,15 @@ z-index: 2;
 
 
 .btn a{
+  position: relative;
+    z-index: 9999;
   padding: 3rem;
   font-weight: 100;
   text-decoration: none;
   color: black;
 }
 
-span a:hover{
+a:hover{
   font-weight: 1000;
   text-decoration: none;
   color:white;
