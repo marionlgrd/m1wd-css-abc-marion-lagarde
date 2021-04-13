@@ -22,9 +22,15 @@
 
 html{cursor:url("css/images/cercles.svg"), auto;}
 
+
+
 .box-filter{
   display: none;
 
+}
+
+.title{
+  padding-top: 10vh;
 }
 
 
@@ -37,12 +43,27 @@ body{
 }
 
 .logo{
+  position:relative;
+}
+
+.text-logo{
   position: absolute;
   height:100px;
   width:100px;
   top:25px;
   right:25px;
-  fill:black;
+  fill:"black";
+  stroke:black;
+}
+
+.ml-logo{
+  z-index:2;
+  position: absolute;
+  height:65px;
+  width:65px;
+  top:55px;
+  right:40px;
+
 }
 
 
@@ -144,6 +165,9 @@ h1{
 font-family: 'Montserrat', sans-serif;
 text-decoration: none;
 padding: 1rem;
+position:absolute;
+top:55px;
+left:40px;
  }
 
 .btn-holder{
@@ -261,7 +285,7 @@ position:relative; }
 .basic-box:nth-child(4) svg{
 opacity:0 }
 
-.basic-box:nth-child(4):hover{
+.basic-box:nth-child(4):hover:onclick{
 
   background-color:#E67E30;
   color:white;

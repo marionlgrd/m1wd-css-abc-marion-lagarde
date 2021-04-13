@@ -9,23 +9,35 @@
 
 body{
   background: #FFE8D6;
+  background-image: url(css/images/fond.jpg);
+  background-size: cover;
 overflow: hidden;
 }
 
-.logo{
-  position: absolute;
-  height:70px;
-  width:70px;
-  top:25px;
-  right:25px;
-  animation-name:turn;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
+header{
+  position:relative;
+  height:150px;
+
+
 }
 
-.logo svg{
-  color:black;
+.text-logo{
+  position: absolute;
+  height:100px;
+  width:100px;
+  top:25px;
+  right:25px;
+  fill:"black";
+  stroke:black;
+}
+
+.ml-logo{
+  z-index:2;
+  position: absolute;
+  height:65px;
+  width:65px;
+  top:55px;
+  right:40px;
 
 }
 
@@ -48,7 +60,7 @@ font-family: 'Montserrat', sans-serif;
 .home--page{
 margin-left:auto;
 margin-right:auto;
-margin-top:30vh;
+margin-top:16vh;
 padding: auto;
 text-align: center;
 z-index: 2;
@@ -87,7 +99,12 @@ z-index: 2;
 }
 
 
-
+.text-logo{
+  animation-name:turn;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
 
 
 
@@ -97,7 +114,7 @@ z-index: 2;
 
   }
   100%{
-  transform: rotate(deg100);
+  transform: rotate(deg360);
 
   }
 }

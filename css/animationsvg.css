@@ -8,7 +8,7 @@
 
 }
 
-.cherry{
+.draw{
   opacity: 1;
     stroke:#FF073A;
     stroke-linecap:round;
@@ -17,6 +17,12 @@
     animation: cherry 7s ease-in-out infinite;
 
 }
+
+
+
+
+
+
 
 @keyframes cherry {
   from {
