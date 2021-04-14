@@ -22,9 +22,15 @@
 
 html{cursor:url("css/images/cercles.svg"), auto;}
 
+
+
 .box-filter{
   display: none;
 
+}
+
+.title{
+  padding-top: 10vh;
 }
 
 
@@ -37,12 +43,27 @@ body{
 }
 
 .logo{
+  position:relative;
+}
+
+.text-logo{
   position: absolute;
   height:100px;
   width:100px;
   top:25px;
   right:25px;
-  fill:black;
+  fill:"black";
+  stroke:black;
+}
+
+.ml-logo{
+  z-index:2;
+  position: absolute;
+  height:65px;
+  width:65px;
+  top:55px;
+  right:40px;
+
 }
 
 
@@ -59,12 +80,12 @@ h2, h3, h4, h5{
 }
 
 h1{
-  font-size: 4rem;
+  font-size: 5em;
   margin: 6rem 4rem 4rem 4rem;
   line-height: 0.85em;
   text-align: center;
   font-family: marvin,sans-serif ;
-  background: linear-gradient(to right, var(--color2), var(--color1));
+  background: linear-gradient(to right, var(--fontcolor), var(--color3));
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 
@@ -144,6 +165,9 @@ h1{
 font-family: 'Montserrat', sans-serif;
 text-decoration: none;
 padding: 1rem;
+position:absolute;
+top:55px;
+left:40px;
  }
 
 .btn-holder{
@@ -377,8 +401,10 @@ opacity: 0;
 
 
 }
+.basic-box:nth-child(10){
+position:relative; }
 .basic-box:nth-child(10):hover{
-  background-color:#BBD2E1;
+  background-color:#949494;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
 border:0px;
@@ -389,41 +415,108 @@ transition: svg 0.5s ease;
 animation: line-ani 7.5s forwards;
 
 }
+
+.basic-box:nth-child(11){
+position:relative; }
 .basic-box:nth-child(11):hover{
   background-color:#FBB925;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
   border:0px;
 }
+.basic-box:nth-child(11) svg{
+opacity:0 }
+
+.basic-box:nth-child(11):hover svg{
+opacity: 0.5;
+transition: svg 0.5s ease;
+animation: line-ani 7.5s forwards;
+
+}
+.basic-box:nth-child(12){
+position:relative; }
 .basic-box:nth-child(12):hover{
-  background-color:#FF6F7D;
-  color:white;
+  background-color:#fcfbed;
+  color:black;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
 border:0px;
 }
+.basic-box:nth-child(12) svg{
+opacity:0 }
+
+.basic-box:nth-child(12):hover svg{
+opacity: 0.5;
+transition: svg 0.5s ease;
+animation: line-ani 7.5s forwards;
+
+}
+.basic-box:nth-child(13){
+position:relative; }
 .basic-box:nth-child(13):hover{
   background-color:#FFE436;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
 border:0px;
 }
+.basic-box:nth-child(13) svg{
+opacity:0 }
+
+.basic-box:nth-child(13):hover svg{
+opacity: 0.5;
+transition: svg 0.5s ease;
+animation: line-ani 7.5s forwards;
+
+}
+.basic-box:nth-child(14){
+position:relative; }
 .basic-box:nth-child(14):hover{
   background-color:#21177D;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
 border:0px;
 }
+.basic-box:nth-child(14) svg{
+opacity:0 }
+
+.basic-box:nth-child(14):hover svg{
+opacity: 0.5;
+transition: svg 0.5s ease;
+animation: line-ani 7.5s forwards;
+
+}
+.basic-box:nth-child(15){
+position:relative; }
 .basic-box:nth-child(15):hover{
   background-color:#b666d2;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
 border:0px;
 }
+.basic-box:nth-child(15) svg{
+opacity:0 }
+
+.basic-box:nth-child(15):hover svg{
+opacity: 0.5;
+transition: svg 0.5s ease;
+animation: line-ani 7.5s forwards;
+
+}
+.basic-box:nth-child(16){
+position:relative; }
 .basic-box:nth-child(16):hover{
   background-color:#DB0730;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
 border:0px;
+}
+.basic-box:nth-child(16) svg{
+opacity:0 }
+
+.basic-box:nth-child(16):hover svg{
+opacity: 0.5;
+transition: svg 0.5s ease;
+animation: line-ani 7.5s forwards;
+
 }
 .basic-box:nth-child(17):hover{
   background-color:black;
@@ -474,7 +567,7 @@ border:0px;
   border:0px;
 }
 .basic-box:nth-child(25):hover{
-  background-color:#82C46C;
+  background-color:#689D71;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
   border:0px;

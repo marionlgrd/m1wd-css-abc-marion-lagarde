@@ -9,13 +9,24 @@
 
 body{
   background: #FFE8D6;
-overflow: hidden;
+  background-image: url('css/images/fond.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
-.logo{
+header{
+  position:relative;
+  height:150px;
+
+
+}
+
+
+.text-logo{
   position: absolute;
-  height:70px;
-  width:70px;
+  height:100px;
+  width:100px;
   top:25px;
   right:25px;
   animation-name:turn;
@@ -24,8 +35,19 @@ overflow: hidden;
   animation-timing-function: ease;
 }
 
-.logo svg{
-  color:black;
+@keyframes turn {
+  0%{transform:  rotate(deg0);}
+  50%{transform:  rotate(deg180);}
+  100%{transform:  rotate(deg360);}
+}
+
+.ml-logo{
+  z-index:2;
+  position: absolute;
+  height:65px;
+  width:65px;
+  top:55px;
+  right:40px;
 
 }
 
@@ -48,7 +70,7 @@ font-family: 'Montserrat', sans-serif;
 .home--page{
 margin-left:auto;
 margin-right:auto;
-margin-top:30vh;
+margin-top:10vh;
 padding: auto;
 text-align: center;
 z-index: 2;
@@ -57,7 +79,7 @@ z-index: 2;
 
 .circle{
   margin:auto;
-  width: 50vw;
+  width: 60vw;
   z-index: 1;
   position:relative;
   animation-name:test;
@@ -75,32 +97,15 @@ z-index: 2;
   100%{transform:  scale(0.75);}
 
 }
-@keyframes cercle {
-  0%{
-  transform:scale(0.5);
-
-  }
-  100%{
-  transform:scale(3);
-
-  }
-}
 
 
 
 
 
 
-@keyframes turn {
-  0%{
-  transform: rotate(deg0);
 
-  }
-  100%{
-  transform: rotate(deg100);
 
-  }
-}
+
 
 
 .btn a{
