@@ -29,16 +29,19 @@ header{
   width:100px;
   top:25px;
   right:25px;
-  animation-name:turn;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
+  animation: 9s linear infinite turn;
 }
 
 @keyframes turn {
-  0%{transform:  rotate(deg0);}
-  50%{transform:  rotate(deg180);}
-  100%{transform:  rotate(deg360);}
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+h1{  animation: 1.5s linear forwards cool-title;}
+
+@keyframes cool-title {
+  from {font-variation-settings: 'opsz' 100, 'wght' 20;}
+  to {font-variation-settings: 'opsz' 100, 'wght' 180;}
 }
 
 .ml-logo{

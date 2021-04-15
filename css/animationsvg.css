@@ -18,7 +18,51 @@
 
 }
 
+.abricot{
+  opacity: 1;
+    stroke:#FF073A;
+    stroke-linecap:round;
+    stroke-dasharray: 4070.0849609375;
+    stroke-dashoffset: 4070.0849609375;
+    animation: abricot 7s ease-in-out infinite;
 
+}
+
+.crown{
+  opacity: 1;
+    stroke:#FF073A;
+    stroke-linecap:round;
+    stroke-dasharray: 4070.0849609375;
+    stroke-dashoffset: 4070.0849609375;
+    animation: abricot 7s ease-in-out infinite;
+
+}
+
+.text-logo{
+  animation: 9s linear infinite turn;
+}
+
+@keyframes turn {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+h1{  animation: 1.5s linear forwards cool-title;}
+
+@keyframes cool-title {
+  from {font-variation-settings: 'opsz' 100, 'wght' 20;}
+  to {font-variation-settings: 'opsz' 100, 'wght' 180;}
+}
+
+@keyframes abricot {
+  from {
+    stroke-dashoffset: 4070.0849609375;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-width: 4;
+  }
+}
 
 
 
@@ -33,33 +77,3 @@
     stroke-width: 2;
   }
 }
-
-
-.logo--1{
-  fill:#000;
-  stroke:#000;
-}
-
-/*
-
-.line {
-  fill: none;
-  stroke: #fff;
-  stroke-width: 4px;
-opacity: 0;
-stroke-dasharray: 300;
-stroke-dashoffset: 500;
-
-}
-
-.line:hover{
-
-}
-
-
-@keyframes line-ani {
-
- to {
-opacity: 0.5;
-  stroke-dashoffset: 5;
- } */
