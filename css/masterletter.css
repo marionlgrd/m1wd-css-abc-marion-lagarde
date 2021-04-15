@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+
+@font-face {
+  font-family: marvin;
+  font-style: normal;
+  src: url("../fonts/marvin/MarvinVisionsTrial-Variable.woff2") format("woff2"),
+       url("../fonts/marvin/MarvinVisionsTrial-Variable.woff") format("woff"),
+       url("../fonts/marvin/MarvinVisionsTrial-Variable.ttf") format("ttf");
+}
+
+html{
+  cursor:url("/css/images/cursorstyle2.png"), auto;
+
+}
+
+:root{
+  --sizefont: 3rem;
+  --padding1: 3rem;
+  --fontcolor: #11040D; /*fake black*/
+  --color1:#C83188;/*pink*/
+  --color2:#E26938;/*orange*/
+  --color3:#58173D;/*purple*/
+  --color4:#F2B01C; /*yellow*/
+  --colorlight:#faf7e6; /*beige claire*/
+
+
+}
+
+a{color:var(--fontcolor);
+font-family: 'Montserrat', sans-serif;
+font-size: 0.75em;
+text-decoration: none;}
+
+.light{
+  color: var(--colorlight);
+}
+
+.logo{
+  position:relative;
+  margin-bottom: 5vh;
+  margin-top: 10px;
+  padding-top: 2px;
+
+}
+
+.text-logo{
+  position: absolute;
+  height:50px;
+  width:50px;
+  right:50vw;
+  fill:"black";
+  stroke:black;
+}
+
+.ml-logo{
+  z-index:2;
+  position: absolute;
+  height:30px;
+  width:30px;
+  top:15px;
+  right:51vw;
+
+}
+
+h1{
+  font-family: marvin,sans-serif ;
+  font-size: 8rem;
+  color:var(--fontcolor);
+  font-variation-settings: 'opsz' 100, 'wght' 20;
+}
+
+.main--content{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20vh;
+}
+
+p{color:var(--fontcolor);
+font-family: 'Montserrat', sans-serif;
+font-size: 0.75em;}
+
+
+
+.lettre{
+  width: 40vw;
+}
+.illu svg{
+  width: 40vw;
+  height: 450px;
+}
+
+footer{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10vh;
+}

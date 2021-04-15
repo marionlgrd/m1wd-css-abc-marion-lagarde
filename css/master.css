@@ -20,7 +20,10 @@
 
 }
 
-html{cursor:url("css/images/cercles.svg"), auto;}
+html{
+  cursor:url("/css/images/cursorstyle.png"), auto;
+  
+}
 
 
 
@@ -66,7 +69,12 @@ body{
 
 }
 
-
+a{margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+  text-decoration: none;
+z-index:9999;
+color:var(--fontcolor);}
 
 
 p{margin-bottom: 1rem;
@@ -306,7 +314,7 @@ position:relative; }
 opacity:0 }
 
 .basic-box:nth-child(5):hover{
-  background-color:#6faef2;
+  background-color:#4169E1;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
 border:0px;
@@ -579,7 +587,7 @@ border:0px;
   border:0px;
 }
 .basic-box:nth-child(27):hover{
-  background-color:#c1e5e8;
+  background-color:#751109;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
   border:0px;

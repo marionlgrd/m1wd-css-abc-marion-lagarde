@@ -1,0 +1,42 @@
+
+:root{
+  --sizefont: 3rem;
+  --padding1: 3rem;
+  --fontcolor: #11040D; /*fake black*/
+  --color1:#C83188;/*pink*/
+  --color2:#E26938;/*orange*/
+  --color3:#58173D;/*purple*/
+  --color4:#F2B01C; /*yellow*/
+
+
+}
+
+#progress {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	top: 0;
+	width: 1em;
+  opacity:0.25;
+	height: 100vh;
+	transform-origin: 50% 0;
+	transform: scaleY(0);
+  background-color: var(--color1);
+  animation: 1s linear forwards progressbar-scroll;
+  animation-timeline: heading-timeline;
+
+}
+
+@keyframes progressbar-scroll {
+  from {
+      transform: scaleY(0);
+  }
+  to {
+      transform: scaleY(1);
+      background-color: var(--color2);
+  }
+}
+
+@scroll-timeline heading-timeline {
+    time-range: 1s;
+}
