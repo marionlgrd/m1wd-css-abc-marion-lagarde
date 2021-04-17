@@ -9,7 +9,7 @@
 }
 
 html{
-  cursor:url("/css/images/cursorstyle2.png"), auto;
+  cursor:url("/css/images/cursor2.png"), auto;
 
 }
 
@@ -35,13 +35,11 @@ text-decoration: none;}
   color: var(--colorlight);
 }
 
-.logo{
-  position:relative;
+header{  position:relative;
   margin-bottom: 5vh;
   margin-top: 10px;
-  padding-top: 2px;
+  padding-top: 2px;}
 
-}
 
 .text-logo{
   position: absolute;
@@ -58,8 +56,8 @@ text-decoration: none;}
   height:30px;
   width:30px;
   top:15px;
-  right:51vw;
-
+  right:50vw;
+margin-right:1vw;
 }
 
 h1{
