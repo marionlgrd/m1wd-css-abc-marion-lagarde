@@ -16,13 +16,14 @@
   --color2:#E26938;/*orange*/
   --color3:#58173D;/*purple*/
   --color4:#F2B01C; /*yellow*/
+  --background:#FFE8D6;
 
 
 }
 
 html{
   cursor:url("/css/images/cursorstyle.png"), auto;
-  
+
 }
 
 
@@ -38,7 +39,7 @@ html{
 
 
 body{
-  background: #FFE8D6;
+  background: var(--background);
   color: var(--fontcolor);
   font-weight: 400;
   line-height: 1.75;
@@ -279,6 +280,7 @@ left:40px;
 
 
 .basic-box{
+  position: relative;
   padding: 1rem;
   border:1px solid var(--fontcolor);
   border-radius: 100px 100px 0px 0px;
@@ -287,11 +289,15 @@ left:40px;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
 
 }
-.basic-box:nth-child(4){
-position:relative; }
+.basic-box svg{
+  opacity:0;
+}
+.basic-box:hover svg{
+  opacity:0.5;
+}
 
-.basic-box:nth-child(4) svg{
-opacity:0 }
+
+
 
 .basic-box:nth-child(4):hover{
 
@@ -300,18 +306,7 @@ opacity:0 }
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
   border:0px;
 }
-.basic-box:nth-child(4):hover svg{
-opacity: 0.5;
-transition: svg 0.5s ease;
-animation: line-ani 7.5s forwards;
 
-}
-
-.basic-box:nth-child(5){
-position:relative; }
-
-.basic-box:nth-child(5) svg{
-opacity:0 }
 
 .basic-box:nth-child(5):hover{
   background-color:#4169E1;
@@ -319,18 +314,8 @@ opacity:0 }
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
 border:0px;
 }
-.basic-box:nth-child(5):hover svg{
-opacity: 0.5;
-transition: svg 0.5s ease;
-animation: line-ani 7.5s forwards;
 
-}
 
-.basic-box:nth-child(6){
-position:relative; }
-
-.basic-box:nth-child(6) svg{
-opacity:0 }
 
 .basic-box:nth-child(6):hover{
   background-color:#c2022f;
@@ -339,18 +324,7 @@ opacity:0 }
 border:0px;
 }
 
-.basic-box:nth-child(6):hover svg{
-opacity: 0.5;
-transition: svg 0.5s ease;
-animation: line-ani 7.5s forwards;
 
-}
-
-.basic-box:nth-child(7){
-position:relative; }
-
-.basic-box:nth-child(7) svg{
-opacity:0 }
 
 .basic-box:nth-child(7):hover{
   background-color:#1560BD;
@@ -359,18 +333,7 @@ opacity:0 }
 border:0px;
 }
 
-.basic-box:nth-child(7):hover svg{
-opacity: 0.5;
-transition: svg 0.5s ease;
-animation: line-ani 7.5s forwards;
 
-}
-
-.basic-box:nth-child(8){
-position:relative; }
-
-.basic-box:nth-child(8) svg{
-opacity:0 }
 
 .basic-box:nth-child(8):hover{
   background-color:#1D7583;
@@ -379,18 +342,8 @@ opacity:0 }
   border:0px;
 }
 
-.basic-box:nth-child(8):hover svg{
-opacity: 0.5;
-transition: svg 0.5s ease;
-animation: line-ani 7.5s forwards;
 
-}
 
-.basic-box:nth-child(9){
-position:relative; }
-
-.basic-box:nth-child(9) svg{
-opacity:0 }
 
 .basic-box:nth-child(9):hover{
   background-color:#8c440d;
@@ -398,206 +351,147 @@ opacity:0 }
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
 border:0px;
 }
-.basic-box:nth-child(9):hover svg{
-opacity: 0.5;
-transition: svg 0.5s ease;
-animation: line-ani 7.5s forwards;
-
-}
-.basic-box:nth-child(10) svg{
-opacity: 0;
 
 
-}
-.basic-box:nth-child(10){
-position:relative; }
+
 .basic-box:nth-child(10):hover{
   background-color:#949494;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
 border:0px;
 }
-.basic-box:nth-child(10):hover svg{
-opacity: 0.5;
-transition: svg 0.5s ease;
-animation: line-ani 7.5s forwards;
 
-}
 
-.basic-box:nth-child(11){
-position:relative; }
 .basic-box:nth-child(11):hover{
   background-color:#FBB925;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
   border:0px;
 }
-.basic-box:nth-child(11) svg{
-opacity:0 }
 
-.basic-box:nth-child(11):hover svg{
-opacity: 0.5;
-transition: svg 0.5s ease;
-animation: line-ani 7.5s forwards;
-
-}
-.basic-box:nth-child(12){
-position:relative; }
 .basic-box:nth-child(12):hover{
   background-color:#fcfbed;
   color:black;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
 border:0px;
 }
-.basic-box:nth-child(12) svg{
-opacity:0 }
 
-.basic-box:nth-child(12):hover svg{
-opacity: 0.5;
-transition: svg 0.5s ease;
-animation: line-ani 7.5s forwards;
 
-}
-.basic-box:nth-child(13){
-position:relative; }
 .basic-box:nth-child(13):hover{
   background-color:#FFE436;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
 border:0px;
 }
-.basic-box:nth-child(13) svg{
-opacity:0 }
 
-.basic-box:nth-child(13):hover svg{
-opacity: 0.5;
-transition: svg 0.5s ease;
-animation: line-ani 7.5s forwards;
 
-}
-.basic-box:nth-child(14){
-position:relative; }
 .basic-box:nth-child(14):hover{
   background-color:#21177D;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
 border:0px;
 }
-.basic-box:nth-child(14) svg{
-opacity:0 }
 
-.basic-box:nth-child(14):hover svg{
-opacity: 0.5;
-transition: svg 0.5s ease;
-animation: line-ani 7.5s forwards;
 
-}
-.basic-box:nth-child(15){
-position:relative; }
 .basic-box:nth-child(15):hover{
   background-color:#b666d2;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
 border:0px;
 }
-.basic-box:nth-child(15) svg{
-opacity:0 }
 
-.basic-box:nth-child(15):hover svg{
-opacity: 0.5;
-transition: svg 0.5s ease;
-animation: line-ani 7.5s forwards;
-
-}
-.basic-box:nth-child(16){
-position:relative; }
 .basic-box:nth-child(16):hover{
-  background-color:#DB0730;
+  background-color:#D473D4;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
 border:0px;
 }
-.basic-box:nth-child(16) svg{
-opacity:0 }
 
-.basic-box:nth-child(16):hover svg{
-opacity: 0.5;
-transition: svg 0.5s ease;
-animation: line-ani 7.5s forwards;
 
-}
 .basic-box:nth-child(17):hover{
-  background-color:black;
+  background-color:#955628;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
 border:0px;
 }
+
 .basic-box:nth-child(18):hover{
   background-color:orange;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
 border:0px;
 }
+
 .basic-box:nth-child(19):hover{
  background-color:#59578d;
  color:white;
  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
  border:0px;
 }
+
 .basic-box:nth-child(20):hover{
   background-color:#91283B;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
   border:0px;
 }
+
 .basic-box:nth-child(21):hover{
-  background-color:red;
+  background-color:#eb8adc;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
   border:0px;
 }
+
 .basic-box:nth-child(22):hover{
   background-color:#f4c430;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
   border:0px;
 }
+
 .basic-box:nth-child(23):hover{
   background-color:#d07c50;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
   border:0px;
 }
+
 .basic-box:nth-child(24):hover{
-  background-color:#9a0eeb;
+  background-color:#3cd070;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
   border:0px;
 }
+
 .basic-box:nth-child(25):hover{
   background-color:#689D71;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
   border:0px;
 }
+
 .basic-box:nth-child(26):hover{
   background-color:#4f1607;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
   border:0px;
 }
+
 .basic-box:nth-child(27):hover{
   background-color:#751109;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
   border:0px;
 }
+
 .basic-box:nth-child(28):hover{
   background-color:#e5c78e;
   color:white;
   transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
   border:0px;
 }
+
 .basic-box:nth-child(29):hover{
   background-color:#6c0277;
   color:white;
