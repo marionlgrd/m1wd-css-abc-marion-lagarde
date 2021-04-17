@@ -7,8 +7,25 @@
        url("../fonts/marvin/MarvinVisionsTrial-Variable.ttf") format("ttf");
 }
 
+html{
+  cursor:url("/css/images/cursorstyle.png"), auto;
+
+}
+
+:root{
+  --sizefont: 3rem;
+  --padding1: 3rem;
+  --fontcolor: #11040D; /*fake black*/
+  --color1:#C83188;/*pink*/
+  --color2:#E26938;/*orange*/
+  --color3:#58173D;/*purple*/
+  --color4:#F2B01C; /*yellow*/
+  --background:#FFE8D6;
+}
+
+
 body{
-  background: #FFE8D6;
+  background: var(--background);
   background-image: url('css/images/fond.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -129,12 +146,12 @@ a:hover{
 
 
 
-.btn {color:var(--color2);
+.btn {color:var(--fontcolor);
   background:transparent;
   border-width:2px;
   border-radius: 5px;
   border-style: solid;
-  border-color: var(--color2);
+  border-color: var(--fontcolor);
   position:relative;
   margin:3rem;
   display:inline-block;
@@ -144,7 +161,7 @@ a:hover{
 .btn:before, .btn:after {content:'';
 display:block;
 position:absolute;
-border-color:var(--color4);
+border-color:var(--fontcolor);
 box-sizing:border-box;
 border-style:solid;
 width:1rem;
@@ -162,11 +179,11 @@ transition:all 0.3s ease-in-out}
 .btn:hover:before, .btn:hover:after {
   width:calc(100% + 12px);
   height:calc(100% + 12px);
-  border-color:var(--color3)}
+  border-color:white;}
 .btn:hover {
   color:#fff;
-  background-color:var(--color4);
-  border-color:var(--color4)}
+  background-color:transparent;
+  border-color:white;}
 .panel {max-width:960px;
   text-align:center;
   position:relative;}
