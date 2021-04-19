@@ -22,7 +22,7 @@
 }
 
 html{
-  cursor:url("/css/images/cursorstyle.png"), auto;
+  cursor:url("/css/images/cursor3.png"), auto;
 
 }
 
@@ -52,8 +52,8 @@ body{
 
 .text-logo{
   position: absolute;
-  height:100px;
-  width:100px;
+  height:50px;
+  width:50px;
   top:25px;
   right:25px;
   fill:"black";
@@ -63,10 +63,10 @@ body{
 .ml-logo{
   z-index:2;
   position: absolute;
-  height:65px;
-  width:65px;
-  top:55px;
-  right:40px;
+  height:30px;
+  width:30px;
+  top:40px;
+  right:35px;
 
 }
 
@@ -246,7 +246,21 @@ left:40px;
    position:relative;}
 
 
+   h1{  animation: 1.5s linear forwards cool-title;}
 
+   @keyframes cool-title {
+     from {font-variation-settings: 'opsz' 100, 'wght' 20;}
+     to {font-variation-settings: 'opsz' 100, 'wght' 180;}
+   }
+
+   .text-logo{
+     animation: 9s linear infinite turn;
+   }
+
+   @keyframes turn {
+     from {transform: rotate(0deg);}
+     to {transform: rotate(360deg);}
+   }
 
 
 
@@ -294,6 +308,16 @@ left:40px;
 }
 .basic-box:hover svg{
   opacity:0.5;
+}
+
+.basic-box svg{
+  height:8em ;
+  width:8em;
+  z-index: 11;
+  position: absolute;
+  top: 1em;
+  left: 2em;
+
 }
 
 
