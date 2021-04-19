@@ -35,19 +35,29 @@ text-decoration: none;}
   color: var(--colorlight);
 }
 
-header{  position:relative;
+header{
+  display:flex;
   margin-bottom: 5vh;
   margin-top: 10px;
   padding-top: 2px;}
 
+.logo{
+   position:relative;
+   justify-content: center;
+   align-self: center;
+  margin-right:auto;
+  margin-left:auto;
+  padding:3px;
+}
 
 .text-logo{
   position: absolute;
   height:50px;
   width:50px;
-  right:50vw;
+  top:1px;
   fill:"black";
   stroke:black;
+
 }
 
 .ml-logo{
@@ -56,8 +66,32 @@ header{  position:relative;
   height:30px;
   width:30px;
   top:15px;
-  right:50vw;
-margin-right:1vw;
+  left:13px;
+
+
+}
+
+
+.text-logo-light{
+  position: absolute;
+  height:50px;
+  width:50px;
+  top:1px;
+  fill:white;
+  stroke:white;
+
+}
+
+.ml-logo-light{
+  z-index:2;
+  position: absolute;
+  height:30px;
+  width:30px;
+  top:15px;
+  left:13px;
+  fill:white;
+
+
 }
 
 h1{
@@ -83,6 +117,7 @@ font-size: 0.75em;}
 
 .lettre{
   width: 40vw;
+  margin-left: 10vh;
 }
 .illu svg{
   width: 40vw;

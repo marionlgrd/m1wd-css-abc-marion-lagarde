@@ -42,6 +42,10 @@
   animation: 9s linear infinite turn;
 }
 
+.text-logo-light{
+  animation: 9s linear infinite turn;
+}
+
 @keyframes turn {
   from {transform: rotate(0deg);}
   to {transform: rotate(360deg);}
