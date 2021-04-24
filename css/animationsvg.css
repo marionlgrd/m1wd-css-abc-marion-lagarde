@@ -32,9 +32,109 @@
   opacity: 1;
     stroke:#FF073A;
     stroke-linecap:round;
-    stroke-dasharray: 4070.0849609375;
-    stroke-dashoffset: 4070.0849609375;
-    animation: abricot 7s ease-in-out infinite;
+    stroke-dasharray: 3379.821533203125;
+    stroke-dashoffset: 3379.821533203125;
+    animation: crown 7s ease-in-out infinite;
+
+}
+
+.sauge{
+  opacity: 1;
+    stroke:#FF073A;
+    stroke-linecap:round;
+    stroke-dasharray: 3467.45263671875;
+    stroke-dashoffset: 3467.45263671875;
+    animation: sauge 7s ease-in-out infinite;
+
+}
+
+.rose{
+  opacity: 1;
+    stroke:#FF073A;
+    stroke-linecap:round;
+    stroke-dasharray: 3287.8359375;
+    stroke-dashoffset: 3287.8359375;
+    animation: rose 7s ease-in-out infinite;
+
+}
+
+.xeres{
+  opacity: 1;
+    stroke:#FF073A;
+    stroke-linecap:round;
+    stroke-dasharray: 1243.078857421875;
+    stroke-dashoffset: 1243.078857421875;
+    animation: xeres 7s ease-in-out infinite;
+
+}
+
+.hyacinthe{
+  opacity: 1;
+    stroke:#FF073A;
+    stroke-linecap:round;
+    stroke-dasharray: 2778.094482421875;
+    stroke-dashoffset: 2778.094482421875;
+    animation: hyacinthe 7s ease-in-out infinite;
+
+}
+
+.lilas{
+  opacity: 1;
+    stroke:#FF073A;
+    stroke-linecap:round;
+    stroke-dasharray: 1040.8546142578125;
+    stroke-dashoffset: 1040.8546142578125;
+    animation: lilas 7s ease-in-out infinite;
+
+}
+
+.yuzu{
+  opacity: 1;
+    stroke:#FF073A;
+    stroke-linecap:round;
+    stroke-dasharray: 1478.687255859375;
+    stroke-dashoffset: 1478.687255859375;
+    animation: yuzu 7s ease-in-out infinite;
+
+}
+
+.mauve{
+  opacity: 1;
+    stroke:#FF073A;
+    stroke-linecap:round;
+    stroke-dasharray: 905.9449462890625;
+    stroke-dashoffset: 905.9449462890625;
+    animation: mauve 7s ease-in-out infinite;
+
+}
+
+.wenge{
+  opacity: 1;
+    stroke:#FF073A;
+    stroke-linecap:round;
+    stroke-dasharray: 6480.392578125;
+    stroke-dashoffset: 6480.392578125;
+    animation: wenge 7s ease-in-out infinite;
+
+}
+
+.sesame{
+  opacity: 1;
+    stroke:#FF073A;
+    stroke-linecap:round;
+    stroke-dasharray: 3499.36328125;
+    stroke-dashoffset: 3499.36328125;
+    animation: sesame 7s ease-in-out infinite;
+
+}
+
+.pourpre{
+  opacity: 1;
+    stroke:#FF073A;
+    stroke-linecap:round;
+    stroke-dasharray: 2541.033203125;
+    stroke-dashoffset: 2541.033203125;
+    animation: pourpre 7s ease-in-out infinite;
 
 }
 
@@ -68,16 +168,123 @@ h1{  animation: 1.5s linear forwards cool-title;}
   }
 }
 
-
-
-
-
 @keyframes cherry {
   from {
     stroke-dashoffset: 2797.898681640625;
   }
   to {
     stroke-dashoffset: 0;
-    stroke-width: 2;
+    stroke-width: 1.5;
+  }
+}
+
+@keyframes crown {
+  from {
+    stroke-dashoffset: 3379.821533203125;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-width: 1.5;
+  }
+}
+
+@keyframes sauge {
+  from {
+    stroke-dashoffset: 3467.45263671875;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-width: 1;
+  }
+}
+
+@keyframes rose {
+  from {
+    stroke-dashoffset: 3287.8359375;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-width: 1;
+  }
+}
+
+
+@keyframes xeres {
+  from {
+    stroke-dashoffset: 1243.078857421875;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-width: 1;
+  }
+}
+
+@keyframes hyacinthe {
+  from {
+    stroke-dashoffset: 2778.094482421875;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-width: 1.5;
+  }
+}
+
+@keyframes lilas {
+  from {
+    stroke-dashoffset: 1040.8546142578125;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-width: 1;
+  }
+}
+
+@keyframes mauve {
+  from {
+    stroke-dashoffset: 905.9449462890625;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-width: 0.75;
+  }
+}
+
+@keyframes yuzu {
+  from {
+    stroke-dashoffset: 1478.687255859375;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-width: 0.75;
+  }
+}
+
+@keyframes wenge {
+  from {
+    stroke-dashoffset: 6480.392578125;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-width: 1;
+  }
+}
+
+@keyframes sesame {
+  from {
+    stroke-dashoffset: 3499.36328125;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-width: 1;
+  }
+}
+
+@keyframes pourpre {
+  from {
+    stroke-dashoffset:2541.033203125;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-width: 1;
   }
 }
