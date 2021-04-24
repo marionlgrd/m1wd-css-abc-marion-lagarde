@@ -447,7 +447,7 @@ border:0px;
 }
 
 .basic-box:nth-child(19):hover{
- background-color:#59578d;
+ background-color:#9e0e40;
  color:white;
  transition: background-color 1s cubic-bezier(0.16, 1, 0.3, 1);
  border:0px;
